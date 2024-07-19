@@ -9,5 +9,6 @@ echo "Backup created at $DEST_DIR"
 git fetch origin
 git reset --hard origin/main
 cp "$DEST_DIR/skyport.db" .
-cp "$DEST_DIR/config.json" .
+cp "$DEST_DIR/config.json" config.old.json
+npm install
 echo "Update process completed successfully"
